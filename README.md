@@ -6,6 +6,6 @@
 
 - sudo docker ps -a | grep -v Up | awk '{ print $1; }' | xargs sudo docker rm
 
-//Delete all containers with none tags.
+//delete all containers with none tags.
 
 - sudo docker images | grep none | awk '{ print $3; }' | xargs sudo docker rmi
